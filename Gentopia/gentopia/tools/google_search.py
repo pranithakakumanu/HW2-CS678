@@ -24,5 +24,6 @@ class GoogleSearch(BaseTool):
 
 
 if __name__ == "__main__":
-    ans = GoogleSearch()._run("Attention for transformer")
+    #ans = GoogleSearch()._run("Attention for transformer")
+    ans = GoogleSearch()._run("Tell about George Mason NLP group.")
     print(ans)
