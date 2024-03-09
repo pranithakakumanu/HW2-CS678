@@ -48,4 +48,4 @@ def load_tools(name: str) -> BaseTool:
     }
     if name not in name2tool:
         raise NotImplementedError
-    return name2tool[name]
+    return name2tool[name] 
