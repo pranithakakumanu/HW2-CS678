@@ -13,7 +13,7 @@ from .gradio import *
 from .code_interpreter import PythonCodeInterpreter
 from .file_operation import WriteFile, ReadFile
 from .duckduckgo import DuckDuckGo
-from .pdf_content import extract_text, basic_summarize
+from .pdf_content import PDFTextSummarizer
 
 
 def load_tools(name: str) -> BaseTool:
@@ -44,8 +44,7 @@ def load_tools(name: str) -> BaseTool:
         "search_single_paper": SearchSinglePaper,
         "search_related_paper": SearchRelatedPaper,
         "search_cite_paper": SearchCitePaper,
-        "extract_text_from_pdf": extract_text,
-        "summarize_pdf": basic_summarize,
+        "pdf_content": PDFTextSummarizer,
     }
     if name not in name2tool:
         raise NotImplementedError
