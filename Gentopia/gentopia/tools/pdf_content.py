@@ -24,4 +24,4 @@ if __name__ == "__main__":
     text = summarizer.extract_text()
     summary = summarizer.basic_summarize(text)
 
-    print("Summary:\n", summary)
+    print("Summary:\n", summary)   
